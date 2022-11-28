@@ -1,15 +1,3 @@
-"""
-Having matrices A and B of size (t,r) and (t,w), respectively.
-Finding the worst case error percentage for our proposed scheme to get A' times B
-We have n workers, s = n - kA*kB stragglers.
-Storage fraction gammaA > 1/kA and gammaB > 1/kB.
-Matrix A is divided into DeltaA block columns, where kA divides DeltaA.
-Matrix B is divided into DeltaB block columns, where kB divides DeltaB.
-One can vary SNR to check the scenario at different noise levels.
-Set worst_case = 1 to find the error in the worst_case scenario.
-Worst_condition_number is the maximum condition number in this scheme.
-"""
-
 from __future__ import division
 import numpy as np
 import itertools as it
